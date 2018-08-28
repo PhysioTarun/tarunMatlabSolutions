@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Assignment 1: Matlab Scavenger Hunt and HelloWorld
 %
-% Submitted by: tarun
+% Submitted by: tarun k singh
 %
 % Due: September 6, 2018
 %
