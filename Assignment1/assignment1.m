@@ -22,7 +22,7 @@
 
 % 1. Set the url of the matlab documentation to a variable called helpURL
 
-
+helpURL = 'https://blackboard.ecu.edu/webapps/blackboard/execute/content/file?cmd=view&content_id=_10245747_1&course_id=_450155_1'
 
 % 2. What does the command 'clear all' do?
 %
@@ -39,13 +39,13 @@
 
 
 % 4. What command would you type to see a list of all installed toolboxes?
-
+ver
 
 
 % 5. What command would return a list of all of the available functions in 
 % the image processing toolbox? 
 
-
+% Answer: help images
 
 % 6. On the line below figure, write a command to draw a graph of 
 % x and y. 
@@ -54,6 +54,10 @@ x = linspace(-2*pi,2*pi);
 y = sin(x);
 
 figure
+plot(x,y)
+xlabel('x')
+ylabel('y')
+
         %<- command goes here
 
         
@@ -69,7 +73,10 @@ figure
 % difference between them?
 
 %
-% Answer: 
+% Answer: "For" and "While" loops. The difference between the two is that
+% in for loop we know beforehand how many times the loop will run vs while
+% loop is dependent on a condition and loops until the condition turns
+% false.
 % 
 
 
@@ -116,8 +123,10 @@ S = sum(A)
 
 %%% Enter the code for your program below this line
 
-fprintf 'Hello World'
-
+fprintf ('\n -----------------------')
+fprintf ('\n Hello World \n')
+msg = input ('Enter your message to the world: ','s');
+fprintf ('Your message "%s" is sent to everyone! \n', msg)
 
 
 %%%%% When you have completed everything, type the following two commands
