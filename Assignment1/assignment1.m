@@ -35,8 +35,8 @@ helpURL = 'https://blackboard.ecu.edu/webapps/blackboard/execute/content/file?cm
 % 3. What function would you use to take the average of the following
 % numbers [1 7 21 32 67 32453]? Store your answer in a variable called
 % averageAnswer.
-a = [1 7 21 32 67 32453]
-averageAnswer = mean (a)
+%a = [1 7 21 32 67 32453]
+%averageAnswer = mean (a)
 
 
 % 4. What command would you type to see a list of all installed toolboxes?
