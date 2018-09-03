@@ -35,7 +35,8 @@ helpURL = 'https://blackboard.ecu.edu/webapps/blackboard/execute/content/file?cm
 % 3. What function would you use to take the average of the following
 % numbers [1 7 21 32 67 32453]? Store your answer in a variable called
 % averageAnswer.
-
+a = [1 7 21 32 67 32453]
+averageAnswer = mean (a)
 
 
 % 4. What command would you type to see a list of all installed toolboxes?
@@ -119,6 +120,7 @@ S                       % Sum (A)
 % could play a similar game on Matlab? Write the command that would launch
 % the game if so. 
 
+xpbombs
 
 
 % 12. What happens if you type why and hit enter in the command window?
@@ -126,8 +128,16 @@ S                       % Sum (A)
 % is commented out).
 
 %
-% Answer: 
-%
+% Answer:  It generates a response randomly. why() was included purely for 
+%   fun, and is not intended to analyze any current error condition or 
+%   give real explanations for warning messages.
+% Examples:
+% why
+% The bald and not excessively bald and not excessively smart hamster.
+% why
+% To fool the tall good and smart system manager.
+% why
+% The rich rich and tall and good system manager suggested it.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%  Part 2: Hello World %%%%%%%%%%%%%%%%%%%%%%%%%%
