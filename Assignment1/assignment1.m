@@ -67,7 +67,8 @@ ylabel('y')
 
 %
 % Answer: 
-%
+%           ttest (x,y)
+%           ztest (x)
 
 % 8. What are the 2 major types of loops that MATLAB supports? What is the
 % difference between them?
@@ -84,8 +85,10 @@ ylabel('y')
 % an answer. 
 
 %
-% Answer: 
-%
+% Answer: NaN stands for Not a Number
+% x = 0/0
+% x = inf/inf
+% x = rem (inf,5)
 
 
 % 10. The following code snippet executes but contains an error (we don't
@@ -96,6 +99,21 @@ ylabel('y')
 A = [1 2 3 2 1 NaN 1 2 3 NaN];
 S = sum(A)
 
+%Answer:
+
+A = [1 2 4 2 1 NaN 1 2 3 NaN]
+numCol = size (A,2);    % Get number of columns in A
+S = 0 ;                 % Set S (Sum of A) to Zero
+
+for var = 1:numCol      % var to reiterate from 1 to max number of columns
+num = A (1,var);        % num saves value of current object
+
+if ~isnan (num)          % check if current object is NaN
+    S = S + num;
+end
+end
+S                       % Sum (A)
+%
 
 % 11. I used to love playing the game minesweeper. Is there a way that I
 % could play a similar game on Matlab? Write the command that would launch
