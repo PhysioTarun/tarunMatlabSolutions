@@ -35,8 +35,7 @@ helpURL = 'https://blackboard.ecu.edu/webapps/blackboard/execute/content/file?cm
 % 3. What function would you use to take the average of the following
 % numbers [1 7 21 32 67 32453]? Store your answer in a variable called
 % averageAnswer.
-%a = [1 7 21 32 67 32453]
-%averageAnswer = mean (a)
+
 
 
 % 4. What command would you type to see a list of all installed toolboxes?
@@ -99,7 +98,7 @@ ylabel('y')
 
 A = [1 2 3 2 1 NaN 1 2 3 NaN];
 S = sum(A)
-%
+
 %Answer:
 
 A = [1 2 4 2 1 NaN 1 2 3 NaN]
@@ -120,7 +119,6 @@ S                       % Sum (A)
 % could play a similar game on Matlab? Write the command that would launch
 % the game if so. 
 
-xpbombs
 
 
 % 12. What happens if you type why and hit enter in the command window?
@@ -133,7 +131,7 @@ xpbombs
 %   give real explanations for warning messages.
 % Examples:
 % why
-% The bald and not excessively bald and not excessively smart hamster.
+% The bald and not excessively bald and not excessively smart hamster obeyed a terrified and not excessively terrified hamster.
 % why
 % To fool the tall good and smart system manager.
 % why
