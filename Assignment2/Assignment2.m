@@ -119,7 +119,8 @@ linspace(8,4,3)
 (-1:0.5:1)'
 
 % 7.)
-
+a [1:10]     % vector with both odd and even numbered elements
+a (1:2:end)  % expression to refer to odd numbered elements
 
 % 8.)
 mat = [7:10; 12:-2:6]
