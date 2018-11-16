@@ -8,7 +8,7 @@ j=0;                            % Initialize counter
 for i = 1:length(subjectID)     % Loop for running through all data rows
     if day2(i) > day1(i)        
         j = j + 1;
-        increamentIDs(j) = subjectID(i);
+        increamentIDs(j,1) = subjectID(i);
 end
 
 

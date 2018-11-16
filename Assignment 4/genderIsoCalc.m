@@ -8,10 +8,10 @@ m = 0; f = 0; % Initialize counters for male and female vectors
 for i = 1:length(gender)    % Run loop for checking each data row
     if gender(i) == 'M'
         m = m+1;            % If "M" is found - increament counter
-        maleIso(m) = ( day1(i) + day2(i) + day3(i) )/3; % Calculate average for each male subject for all three days; add to "maleIso" vector in the end
+        maleIso(m,1) = ( day1(i) + day2(i) + day3(i) )/3; % Calculate average for each male subject for all three days; add to "maleIso" vector in the end
     else
         f = f+1;            % If "F" is found - increament counter
-        femaleIso(f) = ( day1(i) + day2(i) + day3(i) )/3; % Calculate average for each female subject for all three days
+        femaleIso(f,1) = ( day1(i) + day2(i) + day3(i) )/3; % Calculate average for each female subject for all three days
     end
 end
 

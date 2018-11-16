@@ -21,7 +21,7 @@ Day3 = isokdata6803.Day3;
 %       Female (individual & Group)
 %   Using "genderIsoCalc" function
 
-[maleIsoIndMeans, femaleIsoIndMeans, maleGroupIsoMean, femaleGroupIsoMean] = genderIsoCalc(Gender,Day1,Day2,Day3)
+[maleIsoIndMeans, femaleIsoIndMeans, maleGroupIsoMean, femaleGroupIsoMean] = genderIsoCalc(Gender,Day1,Day2,Day3);
 
 
 %%  Get Subject IDs for those who increaed strength on any consecutive days
@@ -35,11 +35,27 @@ normDay1mean = mean(  (Day1 ./ Weight) * mean(Weight)  );
 normDay2mean = mean(  (Day2 ./ Weight) * mean(Weight)  );
 normDay3mean = mean(  (Day3 ./ Weight) * mean(Weight)  );
 
+%%  Convert output data into "equal number of rows" matrix so that it can be
+%   converted into a table
+
+variableLengths = [length(femaleIsoIndMeans) length(maleIsoIndMeans) length(day1toDay2) length(day2toDay3)];
+maxLength  = max(variableLengths); % Get length of output which has maximum number of rows
+
+maleIsoIndMeans = rectangulate(maleIsoIndMeans,maxLength);
+maleGroupIsoMean = rectangulate(maleGroupIsoMean,maxLength);
+femaleIsoIndMeans = rectangulate(femaleIsoIndMeans,maxLength);
+femaleGroupIsoMean = rectangulate(femaleGroupIsoMean,maxLength);
+day1toDay2 = rectangulate(day1toDay2,maxLength);
+day2toDay3 = rectangulate(day2toDay3,maxLength);
+normDay1mean = rectangulate(normDay1mean,maxLength);
+normDay2mean = rectangulate(normDay2mean,maxLength);
+normDay3mean = rectangulate(normDay3mean,maxLength);
+
 %%  Export results to a csvfile
 
+combineTable = table(maleIsoIndMeans,maleGroupIsoMean,femaleIsoIndMeans, ...
+    femaleGroupIsoMean,day1toDay2,day2toDay3,normDay1mean, ...
+    normDay2mean,normDay3mean); % Creates a combined table of all outputs
 
-
-
-
-
+writetable(combineTable,'iso_results.csv') % Exports the combined table to csv file
 
